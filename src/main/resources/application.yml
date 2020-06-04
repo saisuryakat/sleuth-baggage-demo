@@ -1,0 +1,8 @@
+spring:
+  sleuth:
+    propagation-keys:
+      - X-Correlation-Id
+    log:
+      slf4j:
+        whitelisted-mdc-keys:
+          - X-Correlation-Id
